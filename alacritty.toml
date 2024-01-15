@@ -1,0 +1,32 @@
+shell = "pwsh --nologo"
+live_config_reload = true
+
+[window]
+decorations = "None"
+opacity = 0.6
+decorations_theme_variant = "None"
+dynamic_padding = true
+padding = {x = 0, y = 0}
+title = "Terminal"
+
+dynamic_title = false
+
+[font]
+# hello
+normal = {family = "JetBrainsMono Nerd Font", style = "Regular"}
+bold = {family = "JetBrainsMono Nerd Font", style = "Bold"}
+italic = {family = "JetBrainsMono Nerd Font", style = "Italic"}
+size = 11.5
+
+[colors.primary]
+foreground = "#d8d8d8"
+background = "#000000"
+
+[colors]
+cursor = { text = "CellBackground", cursor = "#89ca78" }
+# default = { text = "CellBackground", cursor = "CellForeground" } 
+# (changes cursor color depeding on text color)
+
+[keyboard]
+# maps <C-backspace> to <C-w>
+bindings = [{ key = "Backspace", mods =  "Control", chars =  "\u0017" }]
