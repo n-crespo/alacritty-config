@@ -1,4 +1,4 @@
-shell = "pwsh --nologo"
+shell = "wsl"
 # term = "alacritty"
 live_config_reload = true
 
@@ -36,7 +36,7 @@ transparent_background_colors = false
 draw_bold_text_with_bright_colors = true
 
 [cursor]
-vi_mode_style = { shape = "Beam", blinking = "Never" }
+vi_mode_style = { shape = "Block", blinking = "Never" }
 # default = { text = "CellBackground", cursor = "CellForeground" } 
 # (changes cursor color depeding on text color)
 
@@ -50,6 +50,6 @@ bindings = [
 # maps <C-backspace> to <C-w>
 bindings = [
 { key = "Backspace", mods =  "Control", chars =  "\u0017" },
-{ key = "N", mods = "Control|Shift", action = "SpawnNewInstance" },
+# { key = "N", mods = "Control|Shift", action = "SpawnNewInstance" },
 # { key = "Return", mods = "Alt", action = "SpawnNewInstance" }
 ]
