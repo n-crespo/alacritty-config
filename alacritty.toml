@@ -2,11 +2,6 @@ shell = "wsl"
 # term = "alacritty"
 live_config_reload = true
 
-
-[env]
-TERM = "alacritty"
-
-
 [window]
 decorations = "None"
 opacity = 0.6
@@ -19,12 +14,11 @@ resize_increments = true
 dynamic_title = false
 
 [font]
-# hello
 normal = {family = "JetBrainsMono Nerd Font", style = "Regular"}
 bold = {family = "JetBrainsMono Nerd Font", style = "Bold"}
 italic = {family = "JetBrainsMono Nerd Font", style = "Italic"}
 bold_italic = {family = "JetBrainsMono Nerd Font", style = "Bold Italic"}
-size = 11.5
+size = 12
 
 [colors.primary]
 foreground = "#d8d8d8"
@@ -50,6 +44,4 @@ bindings = [
 # maps <C-backspace> to <C-w>
 bindings = [
 { key = "Backspace", mods =  "Control", chars =  "\u0017" },
-# { key = "N", mods = "Control|Shift", action = "SpawnNewInstance" },
-# { key = "Return", mods = "Alt", action = "SpawnNewInstance" }
 ]
