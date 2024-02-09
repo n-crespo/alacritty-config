@@ -23,8 +23,6 @@ bold_italic = {family = "JetBrainsMono Nerd Font", style = "Bold Italic"}
 size = 12
 
 [colors.primary]
-# foreground = "#d8d8d8"
-# background = "#000000"
 foreground = "#abb2bf"
 background = "#000000"
 
