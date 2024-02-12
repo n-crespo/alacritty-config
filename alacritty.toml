@@ -1,8 +1,8 @@
 shell = "wsl"
 live_config_reload = true
 
-[env]
-term = "alacritty"
+# [env]
+# term = "alacritty"
 
 [window]
 decorations = "None"
