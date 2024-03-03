@@ -20,7 +20,7 @@ normal = {family = "JetBrainsMono Nerd Font", style = "Regular"}
 bold = {family = "JetBrainsMono Nerd Font", style = "Bold"}
 italic = {family = "JetBrainsMono Nerd Font", style = "Italic"}
 bold_italic = {family = "JetBrainsMono Nerd Font", style = "Bold Italic"}
-size = 10.5
+size = 12
 
 [colors.primary]
 foreground = "#abb2bf"
@@ -66,4 +66,7 @@ bindings = [
 # maps <C-backspace> to <C-w>
 bindings = [
 { key = "Backspace", mods =  "Control", chars =  "\u0017" },
+{ key = "M", mods =  "Control", chars =  "\u000D" },
+{ key = "Tab", mods =  "Control", chars =  "\u000E" },
+{ key = "Tab", mods =  "Control|Shift", chars =  "\u0010" },
 ]
