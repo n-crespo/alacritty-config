@@ -66,7 +66,7 @@ bindings = [
 # maps <C-backspace> to <C-w>
 bindings = [
 { key = "Backspace", mods =  "Control", chars =  "\u0017" },
-# { key = "M", mods =  "Control", chars =  "\u000D" }, -- this sends <C-m>
 { key = "Tab", mods =  "Control", chars =  "\u0018" }, # sends <C-x> (mapped in neovim)
 { key = "Tab", mods =  "Control|Shift", chars =  "\u0010" }, # sends <C-P>
+  # { key = "M", mods =  "Control", chars =  "\u000D" }, -- this sends <C-m>
 ]
