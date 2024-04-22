@@ -1,8 +1,8 @@
 shell = "wsl"
 live_config_reload = true
 
-# [env]
-# term = "alacritty"
+[env]
+term = "alacritty"
 
 [window]
 decorations = "None"
@@ -24,7 +24,7 @@ size = 10.25
 
 [colors.primary]
 foreground = "#abb2bf"
-background = "#000000"
+background = "#0d1117"
 
 [colors.normal]
 black = '#000000'
@@ -62,20 +62,6 @@ bindings = [
 {mouse = "Right", action = "Paste"}
 ]
 
-[[hints.enabled]]
-command = "open"
-hyperlinks = true
-post_processing = true
-regex = "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F�-�<>\"\\s{-}\\^⟨⟩`]+"
-
-[hints.enabled.binding]
-key = "U"
-mods = "Control|Shift"
-
-[hints.enabled.mouse]
-enabled = true
-mods = "None"
-
 [keyboard]
 # maps <C-backspace> to <C-w>
 bindings = [
@@ -83,14 +69,15 @@ bindings = [
 { key = "I", mods = "Control", chars = "\u0009" },
 { key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" },
 { key = "Tab", mods = "Control|Shift", chars = "\u001b[27;6;9~" },
-{ key = "\uE05F", chars =""}, # vol up
-{ key = "\uE05E", chars =""}, # vol down
-{ key = "\uE060", chars =""}, # mute
-
-  # chars = "\u0018" sends <C-x>
-  # chars = "\u0010" sends <C-P>
-  # chars = "\u000D" sends <C-m>
+{ key = "\uE05F", chars ="None"}, # vol up
+{ key = "\uE05E", chars ="None"}, # vol down
+{ key = "\uE060", chars ="None"}, # mute
+{ key = "Space", mods = "Control", chars = "\u0000"}
 ]
+
+# chars = "\u0018" sends <C-x>
+# chars = "\u0010" sends <C-P>
+# chars = "\u000D" sends <C-m>
 
 # NOTE: "\x1b[27;5;9~" became "\u001b[27;5;9~"
 # and "\x1b[27;6;9~" became "\u001b[27;6;9~"
