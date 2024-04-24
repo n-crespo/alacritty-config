@@ -6,7 +6,7 @@ term = "alacritty"
 
 [window]
 decorations = "None"
-opacity = 0
+opacity = 1
 decorations_theme_variant = "Dark"
 dynamic_padding = true
 padding = {x = 0, y = 0}
@@ -23,28 +23,53 @@ bold_italic = {family = "JetBrainsMono Nerd Font", style = "Bold Italic"}
 size = 10.25
 
 [colors.primary]
-foreground = "#abb2bf"
-background = "#0d1117"
+foreground = '#c5c9c5'
+background = "#181616"
 
+# taken from macro.lua
 [colors.normal]
-black = '#000000'
-red = "#ef596f"
-green = "#89ca78"
-yellow = "#e5c07b"
-blue = "#61afef"
-magenta = "#d55fde"
-cyan = "#2bbac5"
-white = "#abb2bf"
+black = '#0d0c0c'
+red = '#c4746e'
+green = '#8a9a7b'
+yellow = '#c8ae81'
+blue = '#8ba4b0'
+magenta = '#a292a3'
+cyan = '#95aeac'
+white = '#b4b3a7'
 
 [colors.bright]
-black = '#1a1a1a'
-red = "#f38897"
-green = "#a9d89d"
-yellow = "#edd4a6"
-blue = "#8fc6f4"
-magenta = "#e089e7"
-cyan = "#4bced8"
-white = '#c8cdd5'
+black = '#393836'
+red = '#e46876'
+green = '#87a987'
+yellow = '#dca561'
+blue = "#7fb4ca"
+magenta = '#938aa9'
+cyan = '#7aa89f'
+white = '#b6927b'
+
+# vim term color 17 c_macroOrange1'#b98d7b' (background color)
+
+# DEFAULT COLORS
+
+# normal
+# #181818
+# #ac4242
+# #90a959
+# #f4bf75
+# #6a9fb5
+# #aa759f
+# #75b5aa
+# #d8d8d8
+
+# bright
+# #6b6b6b
+# #c55555
+# #aac474
+# #feca88
+# #82b8c8
+# #c28cb8
+# #93d3c3
+# #f8f8f8
 
 [colors]
 cursor = { text = "CellBackground", cursor = "#89ca78" }
