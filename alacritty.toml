@@ -88,21 +88,23 @@ bindings = [
 ]
 
 [keyboard]
-# maps <C-backspace> to <C-w>
 bindings = [
-{ key = "Backspace", mods =  "Control", chars =  "\u0017" },
-{ key = "I", mods = "Control", chars = "\u0009" },
-{ key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" },
-{ key = "Tab", mods = "Control|Shift", chars = "\u001b[27;6;9~" },
+{ key = "Backspace", mods =  "Control", chars =  "\u0017" }, # sends <C-w>
+{ key = "I", mods = "Control", chars = "\u0009" }, # sends <tab> and <C-I>
+{ key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" }, # sends <C-Tab>
+{ key = "Tab", mods = "Control|Shift", chars = "\u001b[27;6;9~" }, # sends <C-S-Tab>
 { key = "\uE05F", chars ="None"}, # vol up
 { key = "\uE05E", chars ="None"}, # vol down
 { key = "\uE060", chars ="None"}, # mute
-{ key = "Space", mods = "Control", chars = "\u0000"}
+{ key = "Space", mods = "Control", chars = "\u0000"}, # sends <C-space>
+{ key = "Backspace", mods = "Alt", chars = "\u0015"} # sends <C-u>
 ]
 
-# chars = "\u0018" sends <C-x>
-# chars = "\u0010" sends <C-P>
-# chars = "\u000D" sends <C-m>
+# https://en.wikipedia.org/wiki/List_of_Unicode_characters
+
+# "\u0018" sends <C-x>
+# "\u0010" sends <C-P>
+# "\u000D" sends <C-m>
 
 # NOTE: "\x1b[27;5;9~" became "\u001b[27;5;9~"
 # and "\x1b[27;6;9~" became "\u001b[27;6;9~"
