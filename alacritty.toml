@@ -9,7 +9,7 @@ decorations = "None"
 opacity = 1
 decorations_theme_variant = "Dark"
 dynamic_padding = true
-padding = {x = 0, y = 0}
+padding = { x = 5, y = 5 }
 title = "Terminal"
 resize_increments = true
 
