@@ -9,7 +9,7 @@ decorations = "None"
 opacity = 1
 decorations_theme_variant = "Dark"
 dynamic_padding = true
-padding = { x = 3, y = 3 }
+padding = { x = 3, y = 2 }
 title = "Terminal"
 resize_increments = true
 
@@ -20,7 +20,7 @@ normal = {family = "JetBrainsMono Nerd Font", style = "Regular"}
 bold = {family = "JetBrainsMono Nerd Font", style = "Bold"}
 italic = {family = "JetBrainsMono Nerd Font", style = "Italic"}
 bold_italic = {family = "JetBrainsMono Nerd Font", style = "Bold Italic"}
-size = 10.5
+size = 10.25
 
 [colors.primary]
 foreground = '#c5c9c5'
