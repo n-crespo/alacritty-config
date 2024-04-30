@@ -10,7 +10,7 @@ opacity = 1
 decorations_theme_variant = "Dark"
 dynamic_padding = true
 padding = { x = 3, y = 2 }
-title = "Terminal"
+title = "alacritty"
 resize_increments = true
 
 dynamic_title = false
@@ -97,7 +97,8 @@ bindings = [
 { key = "\uE05E", chars ="None"}, # vol down
 { key = "\uE060", chars ="None"}, # mute
 { key = "Space", mods = "Control", chars = "\u0000"}, # sends <C-space>
-{ key = "Backspace", mods = "Alt", chars = "\u0015"} # sends <C-u>
+{ key = "Backspace", mods = "Alt", chars = "\u0015"}, # sends <C-u>
+{key = "V", mods = "Control", action = "Paste"}
 ]
 
 # https://en.wikipedia.org/wiki/List_of_Unicode_characters
