@@ -97,8 +97,10 @@ bindings = [
 { key = "\uE05F", chars ="None"}, # vol up
 { key = "\uE05E", chars ="None"}, # vol down
 { key = "\uE060", chars ="None"}, # mute
-{ key = "Space", mods = "Control", chars = "\u0000"}, # sends <C-space>
-{ key = "Backspace", mods = "Alt", chars = "\u0015"}, # sends <C-u>
+{ key = "Space", mods = "Control", chars = "\u0000" }, # sends <C-space>
+{ key = "Backspace", mods = "Alt", chars = "\u0015" }, # sends <C-u>
+{ key = "Return", mods = "Shift", chars = "\u001B[13;2u" },
+{ key = "Return", mods = "Control", chars =  "\u001B[13;5u"}
 ]
 
 # https://en.wikipedia.org/wiki/List_of_Unicode_characters
