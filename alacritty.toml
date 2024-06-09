@@ -102,6 +102,11 @@ bindings = [
 { key = "Return", mods = "Shift", chars = "\u001B[13;2u" },
 { key = "Return", mods = "Control", chars =  "\u001B[13;5u"},
 { key = "Q", mods = "Control|Shift", chars = "\u001B[27;6;17~"},
+{ key = "H", mods = "Control|Shift", chars = "\u001B[27;6;72~" },
+{ key = "J", mods = "Control|Shift", chars = "\u001B[27;6;74~" },
+{ key = "K", mods = "Control|Shift", chars = "\u001B[27;6;75~" },
+{ key = "L", mods = "Control|Shift", chars = "\u001B[27;6;76~" },
+{ key = "Z", mods = "Control|Shift", chars = "\u001B[27;6;90~" }
 ]
 
 # https://en.wikipedia.org/wiki/List_of_Unicode_characters
