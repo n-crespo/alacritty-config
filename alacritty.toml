@@ -9,8 +9,8 @@ decorations = "None"
 opacity = 1
 decorations_theme_variant = "Dark"
 dynamic_padding = true
-padding.x = 2
-padding.y = 2
+padding.x = 0
+padding.y = 0
 title = "alacritty"
 resize_increments = true
 
@@ -26,6 +26,7 @@ size = 10.2
 [colors.primary]
 foreground = '#c5c9c5'
 background = "#181616"
+# background = "#0d0c0c"
 
 # taken from macro.lua
 [colors.normal]
@@ -108,7 +109,10 @@ bindings = [
 { key = "L", mods = "Control|Shift", chars = "\u001B[27;6;76~" },
 { key = "Z", mods = "Control|Shift", chars = "\u001B[27;6;90~" },
 { key = "A", mods = "Control|Shift", chars = "\u001B[27;6;1~" },
-{ key = "R", mods = "Control|Shift", chars = "\u001B[27;6;18~" }
+{ key = "R", mods = "Control|Shift", chars = "\u001B[27;6;18~" },
+{ key = "T", mods = "Control|Shift", chars = "\u001B[27;6;20~" },
+{ key = "S", mods = "Control|Shift", chars = "\u001B[27;6;19~" },
+{ key = "O", mods = "Control|Shift", chars = "\u001B[27;6;15~" }
 ]
 
 # https://en.wikipedia.org/wiki/List_of_Unicode_characters
