@@ -76,7 +76,7 @@ white = '#b6927b'
 [colors]
 cursor = { text = "CellBackground", cursor = "#89ca78" }
 transparent_background_colors = false
-draw_bold_text_with_bright_colors = true
+draw_bold_text_with_bright_colors = false
 
 [cursor]
 vi_mode_style = { shape = "Block", blinking = "Never" }
@@ -86,36 +86,39 @@ vi_mode_style = { shape = "Block", blinking = "Never" }
 [mouse]
 hide_when_typing = true
 bindings = [
-{mouse = "Right", action = "Paste"}
+  {mouse = "Right", action = "Paste"}
 ]
 
 [keyboard]
 bindings = [
-{ key = "Backspace", mods =  "Control", chars =  "\u0017" }, # sends <C-w>
-{ key = "I", mods = "Control", chars = "\u0009" }, # sends <tab> and <C-I>
-{ key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" }, # sends <C-Tab>
-{ key = "Tab", mods = "Control|Shift", chars = "\u001b[27;6;9~" }, # sends <C-S-Tab>
-{ key = "\uE05F", chars ="None"}, # vol up
-{ key = "\uE05E", chars ="None"}, # vol down
-{ key = "\uE060", chars ="None"}, # mute
-{ key = "Space", mods = "Control", chars = "\u0000" }, # sends <C-space>
-{ key = "Backspace", mods = "Alt", chars = "\u001B\u007F" }, # sends <C-u>
-{ key = "Return", mods = "Shift", chars = "\u001B[13;2u" },
-{ key = "Return", mods = "Control", chars =  "\u001B[13;5u"},
-{ key = "Q", mods = "Control|Shift", chars = "\u001B[27;6;17~"},
-{ key = "Q", mods = "Control|Alt", chars = "\u0011" },
-{ key = "H", mods = "Control|Shift", chars = "\u001B[27;6;72~" },
-{ key = "J", mods = "Control|Shift", chars = "\u001B[27;6;74~" },
-{ key = "K", mods = "Control|Shift", chars = "\u001B[27;6;75~" },
-{ key = "L", mods = "Control|Shift", chars = "\u001B[27;6;76~" },
-{ key = "Z", mods = "Control|Shift", chars = "\u001B[27;6;90~" },
-{ key = "A", mods = "Control|Shift", chars = "\u001B[27;6;1~" },
-{ key = "R", mods = "Control|Shift", chars = "\u001B[27;6;18~" },
-{ key = "T", mods = "Control|Shift", chars = "\u001B[27;6;20~" },
-{ key = "S", mods = "Control|Shift", chars = "\u001B[27;6;19~" },
-{ key = "O", mods = "Control|Shift", chars = "\u001B[27;6;15~" },
-# { key = ";", mods = "Control", chars = "\u001F" }, # this sends <C-_>
-{ key = ";", mods = "Control", chars = "\u0018" }
+  { key = "Backspace", mods =  "Control", chars =  "\u0017" }, # sends <C-w>
+  { key = "I", mods = "Control", chars = "\u001b[9;5u" },
+  { key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" }, # sends <C-Tab>
+  { key = "Tab", mods = "Control|Shift", chars = "\u001b[27;6;9~" }, # sends <C-S-Tab>
+  { key = "\uE05F", chars ="None"}, # vol up
+  { key = "\uE05E", chars ="None"}, # vol down
+  { key = "\uE060", chars ="None"}, # mute
+  { key = "Space", mods = "Control", chars = "\u0000" }, # sends <C-space>
+  { key = "Backspace", mods = "Alt", chars = "\u001B\u007F" }, # sends <C-u>
+  { key = "Return", mods = "Shift", chars = "\u001B[13;2u" },
+  { key = "Return", mods = "Control", chars =  "\u001B[13;5u"},
+  { key = "Q", mods = "Control|Shift", chars = "\u001B[27;6;17~"},
+  { key = "Q", mods = "Control|Alt", chars = "\u0011" },
+  { key = "H", mods = "Control|Shift", chars = "\u001B[27;6;72~" },
+  { key = "J", mods = "Control|Shift", chars = "\u001B[27;6;74~" },
+  { key = "K", mods = "Control|Shift", chars = "\u001B[27;6;75~" },
+  { key = "L", mods = "Control|Shift", chars = "\u001B[27;6;76~" },
+  { key = "Z", mods = "Control|Shift", chars = "\u001B[27;6;90~" },
+  { key = "A", mods = "Control|Shift", chars = "\u001B[27;6;1~" },
+  { key = "R", mods = "Control|Shift", chars = "\u001B[27;6;18~" },
+  { key = "T", mods = "Control|Shift", chars = "\u001B[27;6;20~" },
+  { key = "S", mods = "Control|Shift", chars = "\u001B[27;6;19~" },
+  { key = "O", mods = "Control|Shift", chars = "\u001B[27;6;15~" },
+  { key = "Slash", mods = "Control", chars = "\u001f" },
+  { key = "Slash", mods = "Control|Shift", chars = "\u001f" },
+  { key = "Semicolon", mods = "Control", chars = "\u0018" },
+  { key = "Period", mods = "Control", chars = "\u001b[27;5;46~" },
+    # { key = ";", mods = "Control", chars = "\u001F" }, # this sends <C-_>
 ]
 
 # https://en.wikipedia.org/wiki/List_of_Unicode_characters
