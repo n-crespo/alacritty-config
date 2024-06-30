@@ -1,5 +1,6 @@
 shell = "wsl"
 live_config_reload = true
+selection.save_to_clipboard = false
 
 [env]
 # term = "alacritty"
@@ -92,7 +93,7 @@ bindings = [
 [keyboard]
 bindings = [
   { key = "Backspace", mods =  "Control", chars =  "\u0017" }, # sends <C-w>
-  { key = "I", mods = "Control", chars = "\u001b[9;5u" },
+  { key = "I", mods = "Control", chars = "\u001B[105;5u" },
   { key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" }, # sends <C-Tab>
   { key = "Tab", mods = "Control|Shift", chars = "\u001b[27;6;9~" }, # sends <C-S-Tab>
   { key = "\uE05F", chars ="None"}, # vol up
@@ -118,7 +119,8 @@ bindings = [
   { key = "Slash", mods = "Control|Shift", chars = "\u001f" },
   { key = "Semicolon", mods = "Control", chars = "\u0018" },
   { key = "Period", mods = "Control", chars = "\u001b[27;5;46~" },
-    # { key = ";", mods = "Control", chars = "\u001F" }, # this sends <C-_>
+  { key = "?", mods = "Control|Shift", chars = "\u001B[27;6;47~"  },
+  # { key = ";", mods = "Control", chars = "\u001F" }, # this sends <C-_>
 ]
 
 # https://en.wikipedia.org/wiki/List_of_Unicode_characters
