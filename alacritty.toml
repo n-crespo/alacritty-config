@@ -121,6 +121,7 @@ bindings = [
   { key = "Period", mods = "Control", chars = "\u001b[27;5;46~" },
   { key = "?", mods = "Control|Shift", chars = "\u001B[27;6;47~"  },
   { key = "V", mods = "Control|Shift", chars = "\u001B[86;6~"},
+  # { key = "Comma", mods = "Control", command = {program = "powershell", args = ["-Command", "sublime_text.exe $env:USERPROFILE\\AppData\\Roaming\\alacritty\\alacritty.toml"]}}
   # { key = ";", mods = "Control", chars = "\u001F" }, # this sends <C-_>
 ]
 
