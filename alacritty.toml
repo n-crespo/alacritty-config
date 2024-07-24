@@ -3,7 +3,7 @@ live_config_reload = true
 selection.save_to_clipboard = false
 
 [env]
-# term = "alacritty"
+term = "xterm"
 
 [window]
 decorations = "None"
@@ -18,10 +18,10 @@ resize_increments = true
 dynamic_title = false
 
 [font]
-normal = {family = "JetBrainsMono Nerd Font", style = "Regular"}
-bold = {family = "JetBrainsMono Nerd Font", style = "Bold"}
-italic = {family = "JetBrainsMono Nerd Font", style = "Italic"}
-bold_italic = {family = "JetBrainsMono Nerd Font", style = "Bold Italic"}
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
 size = 10.2
 
 [colors.primary]
@@ -86,24 +86,22 @@ vi_mode_style = { shape = "Block", blinking = "Never" }
 
 [mouse]
 hide_when_typing = true
-bindings = [
-  {mouse = "Right", action = "Paste"}
-]
+bindings = [{ mouse = "Right", action = "Paste" }]
 
 [keyboard]
 bindings = [
-  { key = "Backspace", mods =  "Control", chars =  "\u0017" }, # sends <C-w>
+  { key = "Backspace", mods = "Control", chars = "\u0017" },         # sends <C-w>
   { key = "I", mods = "Control", chars = "\u001B[105;5u" },
-  { key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" }, # sends <C-Tab>
+  { key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" },       # sends <C-Tab>
   { key = "Tab", mods = "Control|Shift", chars = "\u001b[27;6;9~" }, # sends <C-S-Tab>
-  { key = "\uE05F", chars ="None"}, # vol up
-  { key = "\uE05E", chars ="None"}, # vol down
-  { key = "\uE060", chars ="None"}, # mute
-  { key = "Space", mods = "Control", chars = "\u0000" }, # sends <C-space>
-  { key = "Backspace", mods = "Alt", chars = "\u001B\u007F" }, # sends <C-u>
+  { key = "\uE05F", chars = "None" },                                # vol up
+  { key = "\uE05E", chars = "None" },                                # vol down
+  { key = "\uE060", chars = "None" },                                # mute
+  { key = "Space", mods = "Control", chars = "\u0000" },             # sends <C-space>
+  { key = "Backspace", mods = "Alt", chars = "\u001B\u007F" },       # sends <C-u>
   { key = "Return", mods = "Shift", chars = "\u001B[13;2u" },
-  { key = "Return", mods = "Control", chars =  "\u001B[13;5u"},
-  { key = "Q", mods = "Control|Shift", chars = "\u001B[27;6;17~"},
+  { key = "Return", mods = "Control", chars = "\u001B[13;5u" },
+  { key = "Q", mods = "Control|Shift", chars = "\u001B[27;6;17~" },
   { key = "Q", mods = "Control|Alt", chars = "\u0011" },
   { key = "H", mods = "Control|Shift", chars = "\u001B[27;6;72~" },
   { key = "J", mods = "Control|Shift", chars = "\u001B[27;6;74~" },
@@ -119,9 +117,9 @@ bindings = [
   { key = "Slash", mods = "Control|Shift", chars = "\u001f" },
   { key = "Semicolon", mods = "Control", chars = "\u0018" },
   { key = "Period", mods = "Control", chars = "\u001b[27;5;46~" },
-  { key = "?", mods = "Control|Shift", chars = "\u001B[27;6;47~"  },
-  { key = "V", mods = "Control|Shift", chars = "\u001B[86;6~"},
-  { key= "C", mods= "Control|Shift", chars= "\u001B[27;6;67~" }
+  { key = "?", mods = "Control|Shift", chars = "\u001B[27;6;47~" },
+  { key = "V", mods = "Control|Shift", chars = "\u001B[86;6~" },
+  { key = "C", mods = "Control|Shift", chars = "\u001B[27;6;67~" },
   # { key = "Comma", mods = "Control", command = {program = "powershell", args = ["-Command", "sublime_text.exe $env:USERPROFILE\\AppData\\Roaming\\alacritty\\alacritty.toml"]}}
   # { key = ";", mods = "Control", chars = "\u001F" }, # this sends <C-_>
 ]
