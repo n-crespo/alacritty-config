@@ -12,10 +12,9 @@ decorations_theme_variant = "Dark"
 dynamic_padding = true
 padding.x = 0
 padding.y = 0
-title = "alacritty"
+# title = "alacritty"
 resize_increments = true
-
-dynamic_title = false
+dynamic_title = true
 
 [font]
 normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
