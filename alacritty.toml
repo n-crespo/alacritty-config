@@ -1,4 +1,4 @@
-shell = "ubuntu2204"
+shell = "wsl"
 live_config_reload = true
 selection.save_to_clipboard = false
 
