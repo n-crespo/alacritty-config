@@ -131,3 +131,4 @@ bindings = [
 
 # NOTE: "\x1b[27;5;9~" became "\u001b[27;5;9~"
 # and "\x1b[27;6;9~" became "\u001b[27;6;9~"
+
