@@ -1,6 +1,11 @@
+[terminal]
 shell = "wsl"
+
+[general]
 live_config_reload = true
-selection.save_to_clipboard = false
+
+[selection]
+save_to_clipboard = false
 
 [env]
 term = "xterm"
@@ -47,7 +52,7 @@ yellow = '#dca561'
 blue = "#7fb4ca"
 magenta = '#938aa9'
 cyan = '#7aa89f'
-white = '#b6927b'
+white = '#c5c9c5'
 
 # vim term color 17 c_macroOrange1'#b98d7b' (background color)
 
