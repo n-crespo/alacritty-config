@@ -102,7 +102,7 @@ bindings = [
   { key = "\uE05E", chars = "None" },                                # vol down
   { key = "\uE060", chars = "None" },                                # mute
   { key = "Space", mods = "Control", chars = "\u0000" },             # sends <C-space>
-  { key = "Backspace", mods = "Alt", chars = "\u001B\u007F" },       # sends <C-u>
+  { key = "Backspace", mods = "Alt", chars = "\u001B\u007F" },
   { key = "Return", mods = "Shift", chars = "\u001B[13;2u" },
   { key = "Return", mods = "Control", chars = "\u001B[13;5u" },
   { key = "Q", mods = "Control|Shift", chars = "\u001B[27;6;17~" },
@@ -136,4 +136,3 @@ bindings = [
 
 # NOTE: "\x1b[27;5;9~" became "\u001b[27;5;9~"
 # and "\x1b[27;6;9~" became "\u001b[27;6;9~"
-
