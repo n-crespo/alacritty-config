@@ -94,14 +94,15 @@ bindings = [{ mouse = "Right", action = "Paste" }]
 
 [keyboard]
 bindings = [
-  { key = "Backspace", mods = "Control", chars = "\u0017" },         # sends <C-w>
+  { key = "M", mods = "Command|Shift", action = "ToggleFullscreen" },
+  { key = "Backspace", mods = "Control", chars = "\u0017" },          # sends <C-w>
   { key = "I", mods = "Control", chars = "\u001B[105;5u" },
-  { key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" },       # sends <C-Tab>
-  { key = "Tab", mods = "Control|Shift", chars = "\u001b[27;6;9~" }, # sends <C-S-Tab>
-  { key = "\uE05F", chars = "None" },                                # vol up
-  { key = "\uE05E", chars = "None" },                                # vol down
-  { key = "\uE060", chars = "None" },                                # mute
-  { key = "Space", mods = "Control", chars = "\u0000" },             # sends <C-space>
+  { key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" },        # sends <C-Tab>
+  { key = "Tab", mods = "Control|Shift", chars = "\u001b[27;6;9~" },  # sends <C-S-Tab>
+  { key = "\uE05F", chars = "None" },                                 # vol up
+  { key = "\uE05E", chars = "None" },                                 # vol down
+  { key = "\uE060", chars = "None" },                                 # mute
+  { key = "Space", mods = "Control", chars = "\u0000" },              # sends <C-space>
   { key = "Backspace", mods = "Alt", chars = "\u001B\u007F" },
   { key = "Return", mods = "Shift", chars = "\u001B[13;2u" },
   { key = "Return", mods = "Control", chars = "\u001B[13;5u" },
