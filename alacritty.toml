@@ -11,7 +11,7 @@ save_to_clipboard = false
 term = "xterm"
 
 [window]
-decorations = "None"
+decorations = "buttonless"
 opacity = 1
 decorations_theme_variant = "Dark"
 dynamic_padding = true
