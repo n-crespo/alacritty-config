@@ -1,5 +1,5 @@
-[terminal]
-shell = "wsl"
+# [terminal]
+# shell = "wsl"
 
 [general]
 live_config_reload = true
