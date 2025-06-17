@@ -29,54 +29,29 @@ bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
 size = 13
 
 [colors.primary]
-foreground = '#c9c9c9'
-background = "#181616"
-# background = "#0d0c0c"
+foreground = '#C5C9C5'
+background = '#111111'
+# background = '#0D0C0C'
 
-# taken from macro.lua
 [colors.normal]
-black = '#0d0c0c'
-red = '#c55555'
-green = '#8a9a7b'
-yellow = '#c8ae81'
-blue = '#8ba4b0'
-magenta = '#a292a3'
-cyan = '#95aeac'
-white = '#c9c9c9'
+black = '#0D0C0C'
+red = '#C4746E'
+green = '#8A9A7B'
+yellow = '#C8AE81'
+blue = '#8BA4B0'
+magenta = '#A292A3'
+cyan = '#95AEAC'
+white = '#C5C9C5'
 
 [colors.bright]
-black = '#2e2e2e'
-red = '#ac4242'
-green = '#87a987'
-yellow = '#dca561'
-blue = '#7fb4ca'
-magenta = '#938aa9'
-cyan = '#7aa89f'
-white = '#ffffff'
-
-# vim term color 17 c_macroOrange1'#b98d7b' (background color)
-
-# DEFAULT COLORS
-
-# normal
-# #181818
-# #ac4242
-# #90a959
-# #f4bf75
-# #6a9fb5
-# #aa759f
-# #75b5aa
-# #d8d8d8
-
-# bright
-# #6b6b6b
-# #c55555
-# #aac474
-# #feca88
-# #82b8c8
-# #c28cb8
-# #93d3c3
-# #f8f8f8
+black = '#393836'
+red = '#E46876'
+green = '#87A987'
+yellow = '#DCA561'
+blue = '#7FB4CA'
+magenta = '#938AA9'
+cyan = '#7AA89F'
+white = '#FFFFFF'
 
 [colors]
 cursor = { text = "CellBackground", cursor = "#ffffff" }
@@ -94,20 +69,28 @@ bindings = [{ mouse = "Right", action = "Paste" }]
 
 [keyboard]
 bindings = [
-  { key = "M", mods = "Command|Shift", action = "ToggleFullscreen" },
-  { key = "Backspace", mods = "Control", chars = "\u0017" },          # sends <C-w>
-  { key = "I", mods = "Control", chars = "\u001B[105;5u" },
-  { key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" },        # sends <C-Tab>
-  { key = "Tab", mods = "Control|Shift", chars = "\u001b[27;6;9~" },  # sends <C-S-Tab>
-  { key = "\uE05F", chars = "None" },                                 # vol up
-  { key = "\uE05E", chars = "None" },                                 # vol down
-  { key = "\uE060", chars = "None" },                                 # mute
-  { key = "Space", mods = "Control", chars = "\u0000" },              # sends <C-space>
+  { key = "\uE05F", chars = "None" }, # vol up
+  { key = "\uE05E", chars = "None" }, # vol down
+  { key = "\uE060", chars = "None" }, # mute
+
   { key = "Backspace", mods = "Alt", chars = "\u001B\u007F" },
+
   { key = "Return", mods = "Shift", chars = "\u001B[13;2u" },
+  { key = "Backspace", mods = "Shift", chars = "\u001B[27;2;8~" },
+
+  { key = "[", mods = "Control", chars = "\u001B[27;2;8~" },       # this sends <S-BS>, i use to unindent. doesn't break <ESC>
+  { key = "I", mods = "Control", chars = "\u001B[105;5u" },
+  { key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" },     # sends <C-Tab>
+  { key = "Space", mods = "Control", chars = "\u0000" },           # sends <C-space>
+  { key = "Slash", mods = "Control", chars = "\u001f" },
   { key = "Return", mods = "Control", chars = "\u001B[13;5u" },
-  { key = "Q", mods = "Control|Shift", chars = "\u001B[27;6;17~" },
+  { key = "Period", mods = "Control", chars = "\u001b[27;5;46~" },
+  { key = "Backspace", mods = "Control", chars = "\u0017" },       # sends <C-w>
+  { key = "Semicolon", mods = "Control", chars = ":" },            # This sends regular :, to go to vim cmdline
+
   { key = "Q", mods = "Control|Alt", chars = "\u0011" },
+  { key = "M", mods = "Command|Shift", action = "ToggleFullscreen" },
+  { key = "Q", mods = "Control|Shift", chars = "\u001B[27;6;17~" },
   { key = "H", mods = "Control|Shift", chars = "\u001B[27;6;72~" },
   { key = "J", mods = "Control|Shift", chars = "\u001B[27;6;74~" },
   { key = "K", mods = "Control|Shift", chars = "\u001B[27;6;75~" },
@@ -118,15 +101,16 @@ bindings = [
   { key = "T", mods = "Control|Shift", chars = "\u001B[27;6;20~" },
   { key = "S", mods = "Control|Shift", chars = "\u001B[27;6;19~" },
   { key = "O", mods = "Control|Shift", chars = "\u001B[27;6;15~" },
-  { key = "Slash", mods = "Control", chars = "\u001f" },
-  { key = "Slash", mods = "Control|Shift", chars = "\u001f" },
-  { key = "Semicolon", mods = "Control", chars = ":" },
-  { key = "Period", mods = "Control", chars = "\u001b[27;5;46~" },
-  { key = "[", mods = "Control", chars = "\u001b" },
   { key = "?", mods = "Control|Shift", chars = "\u001B[27;6;47~" },
   { key = "V", mods = "Control|Shift", chars = "\u001B[86;6~" },
   { key = "C", mods = "Control|Shift", chars = "\u001B[27;6;67~" },
-  # { key = "Comma", mods = "Control", command = {program = "powershell", args = ["-Command", "sublime_text.exe $env:USERPROFILE\\AppData\\Roaming\\alacritty\\alacritty.toml"]}}
+  { key = "Tab", mods = "Control|Shift", chars = "\u001b[27;6;9~" },  # sends <C-S-Tab>
+  { key = "Slash", mods = "Control|Shift", chars = "\u001f" },
+
+  # { key = "Comma", mods = "Control", command = { program = "/Users/ncrespo1/Desktop/Applications/Alacritty.app/Contents/MacOS/alacritty", args = [
+  #   "--command",
+  #   "btop",
+  # ] } },
   # { key = ";", mods = "Control", chars = "\u001F" }, # this sends <C-_>
 ]
 
