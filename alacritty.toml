@@ -11,12 +11,12 @@ save_to_clipboard = false
 term = "xterm"
 
 [window]
-decorations = "buttonless"
+decorations = "full"
 opacity = 1
 decorations_theme_variant = "Dark"
 dynamic_padding = true
 padding.x = 0
-padding.y = 4
+padding.y = 1
 # title = "alacritty"
 resize_increments = true
 dynamic_title = true
@@ -74,6 +74,7 @@ bindings = [
   { key = "\uE060", chars = "None" }, # mute
 
   { key = "Backspace", mods = "Alt", chars = "\u001B\u007F" },
+  { key = "Backspace", mods = "Command", chars = "\u001B\u007F" },
 
   { key = "Return", mods = "Shift", chars = "\u001B[13;2u" },
   { key = "Backspace", mods = "Shift", chars = "\u001B[27;2;8~" },
