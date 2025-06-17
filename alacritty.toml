@@ -16,7 +16,7 @@ opacity = 1
 decorations_theme_variant = "Dark"
 dynamic_padding = true
 padding.x = 0
-padding.y = 0
+padding.y = 4
 # title = "alacritty"
 resize_increments = true
 dynamic_title = true
@@ -29,30 +29,30 @@ bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
 size = 13
 
 [colors.primary]
-foreground = '#c5c9c5'
+foreground = '#c9c9c9'
 background = "#181616"
 # background = "#0d0c0c"
 
 # taken from macro.lua
 [colors.normal]
 black = '#0d0c0c'
-red = '#c4746e'
+red = '#c55555'
 green = '#8a9a7b'
 yellow = '#c8ae81'
 blue = '#8ba4b0'
 magenta = '#a292a3'
 cyan = '#95aeac'
-white = '#b4b3a7'
+white = '#c9c9c9'
 
 [colors.bright]
-black = '#393836'
-red = '#e46876'
+black = '#2e2e2e'
+red = '#ac4242'
 green = '#87a987'
 yellow = '#dca561'
-blue = "#7fb4ca"
+blue = '#7fb4ca'
 magenta = '#938aa9'
 cyan = '#7aa89f'
-white = '#c5c9c5'
+white = '#ffffff'
 
 # vim term color 17 c_macroOrange1'#b98d7b' (background color)
 
@@ -120,8 +120,9 @@ bindings = [
   { key = "O", mods = "Control|Shift", chars = "\u001B[27;6;15~" },
   { key = "Slash", mods = "Control", chars = "\u001f" },
   { key = "Slash", mods = "Control|Shift", chars = "\u001f" },
-  { key = "Semicolon", mods = "Control", chars = "\u0018" },
+  { key = "Semicolon", mods = "Control", chars = ":" },
   { key = "Period", mods = "Control", chars = "\u001b[27;5;46~" },
+  { key = "[", mods = "Control", chars = "\u001b" },
   { key = "?", mods = "Control|Shift", chars = "\u001B[27;6;47~" },
   { key = "V", mods = "Control|Shift", chars = "\u001B[86;6~" },
   { key = "C", mods = "Control|Shift", chars = "\u001B[27;6;67~" },
