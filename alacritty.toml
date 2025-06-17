@@ -78,15 +78,15 @@ bindings = [
   { key = "Return", mods = "Shift", chars = "\u001B[13;2u" },
   { key = "Backspace", mods = "Shift", chars = "\u001B[27;2;8~" },
 
-  { key = "[", mods = "Control", chars = "\u001B[27;2;8~" },       # this sends <S-BS>, i use to unindent. doesn't break <ESC>
+  { key = "[", mods = "Control", chars = "\u001b[1;6;10~" },          # this sends <S-BS>, i use to unindent. doesn't break <ESC>
   { key = "I", mods = "Control", chars = "\u001B[105;5u" },
-  { key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" },     # sends <C-Tab>
-  { key = "Space", mods = "Control", chars = "\u0000" },           # sends <C-space>
+  { key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" },        # sends <C-Tab>
+  { key = "Space", mods = "Control", chars = "\u0000" },              # sends <C-space>
   { key = "Slash", mods = "Control", chars = "\u001f" },
   { key = "Return", mods = "Control", chars = "\u001B[13;5u" },
   { key = "Period", mods = "Control", chars = "\u001b[27;5;46~" },
-  { key = "Backspace", mods = "Control", chars = "\u0017" },       # sends <C-w>
-  { key = "Semicolon", mods = "Control", chars = ":" },            # This sends regular :, to go to vim cmdline
+  { key = "Backspace", mods = "Control", chars = "\u0017" },          # sends <C-w>
+  { key = "Semicolon", mods = "Control", chars = "\u001b[27;5;59~" }, # This sends regular :, to go to vim cmdline
 
   { key = "Q", mods = "Control|Alt", chars = "\u0011" },
   { key = "M", mods = "Command|Shift", action = "ToggleFullscreen" },
