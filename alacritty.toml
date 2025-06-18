@@ -64,7 +64,7 @@ cyan = '#7AA89F'
 white = '#FFFFFF'
 
 [colors]
-cursor = { text = "CellBackground", cursor = "#ffffff" }
+cursor = { text = "CellBackground", cursor = "#C5C9C9" }
 transparent_background_colors = false
 draw_bold_text_with_bright_colors = false
 
