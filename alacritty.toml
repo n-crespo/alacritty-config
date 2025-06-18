@@ -22,17 +22,21 @@ resize_increments = true
 dynamic_title = true
 
 [font]
-normal = { family = "JetBrainsMono Nerd Font", style = "Light" }
-bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
-italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
-bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
-size = 13
+size = 14
+# normal = { family = "JetBrainsMono Nerd Font", style = "Light" }
+# bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+# italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+# bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+normal = { family = "CaskaydiaCove Nerd Font", style = "SemiLight" }
+bold = { family = "CaskaydiaCove Nerd Font", style = "Bold" }
+italic = { family = "CaskaydiaCove Nerd Font", style = "Italic" }
+bold_italic = { family = "CaskaydiaCove Nerd Font", style = "Bold Italic" }
 
 [font.offset]
-y = 6
+y = 10
 
 [font.glyph_offset]
-y = 3
+y = 5
 
 [colors.primary]
 foreground = '#C5C9C5'
@@ -79,11 +83,11 @@ bindings = [
   { key = "\uE05E", chars = "None" }, # vol down
   { key = "\uE060", chars = "None" }, # mute
 
-  { key = "Backspace", mods = "Command", chars = "\u001B\u007F" },
-
+  { key = "Backspace", mods = "Command", chars = "\u001B\u007F" }, # clear the line (send meta-backspace)
   { key = "Return", mods = "Shift", chars = "\u001B[13;2u" },
   { key = "Backspace", mods = "Shift", chars = "\u001B[27;2;8~" },
 
+  # ctrl BINDINGS
   { key = "[", mods = "Control", chars = "\u001b[1;6;10~" },          # this sends <S-BS>, i use to unindent. doesn't break <ESC>
   { key = "I", mods = "Control", chars = "\u001B[105;5u" },
   { key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" },        # sends <C-Tab>
@@ -94,25 +98,32 @@ bindings = [
   { key = "Backspace", mods = "Control", chars = "\u0017" },          # sends <C-w>
   { key = "Semicolon", mods = "Control", chars = "\u001b[27;5;59~" }, # This sends regular :, to go to vim cmdline
 
-  { key = "Q", mods = "Control|Alt", chars = "\u0011" },
+  # ACTIONS
+  { key = "L", mods = "Control|Shift", action = "SelectNextTab" },
+  { key = "W", mods = "Control|Shift", action = "Quit" },
+  { key = "H", mods = "Control|Shift", action = "SelectPreviousTab" },
+  { key = "T", mods = "Control|Shift", action = "CreateNewTab" },
+  { key = "N", mods = "Control|Shift", action = "CreateNewTab" },
   { key = "M", mods = "Command|Shift", action = "ToggleFullscreen" },
+  { key = "M", mods = "Control|Shift", action = "ToggleFullscreen" },
+  # { key = "Space", mods = "Control|Shift", action = "CreateNewTab" },
+
+  # { key = "H", mods = "Control|Shift", chars = "\u001B[27;6;72~" },
+  # { key = "L", mods = "Control|Shift", chars = "\u001B[27;6;76~" },
+  # { key = "T", mods = "Control|Shift", chars = "\u001B[27;6;20~" },
+  { key = "Q", mods = "Control|Alt", chars = "\u0011" },
   { key = "Q", mods = "Control|Shift", chars = "\u001B[27;6;17~" },
-  { key = "H", mods = "Control|Shift", chars = "\u001B[27;6;72~" },
   { key = "J", mods = "Control|Shift", chars = "\u001B[27;6;74~" },
   { key = "K", mods = "Control|Shift", chars = "\u001B[27;6;75~" },
-  { key = "L", mods = "Control|Shift", chars = "\u001B[27;6;76~" },
   { key = "Z", mods = "Control|Shift", chars = "\u001B[27;6;90~" },
-  { key = "Return", mods = "Control", chars = "\r" },
-  { key = "Enter", mods = "Control", chars = "\r" },
   { key = "A", mods = "Control|Shift", chars = "\u001B[27;6;1~" },
   { key = "R", mods = "Control|Shift", chars = "\u001B[27;6;18~" },
-  { key = "T", mods = "Control|Shift", chars = "\u001B[27;6;20~" },
   { key = "S", mods = "Control|Shift", chars = "\u001B[27;6;19~" },
   { key = "O", mods = "Control|Shift", chars = "\u001B[27;6;15~" },
   { key = "?", mods = "Control|Shift", chars = "\u001B[27;6;47~" },
   { key = "V", mods = "Control|Shift", chars = "\u001B[86;6~" },
   { key = "C", mods = "Control|Shift", chars = "\u001B[27;6;67~" },
-  { key = "Tab", mods = "Control|Shift", chars = "\u001b[27;6;9~" },  # sends <C-S-Tab>
+  { key = "Tab", mods = "Control|Shift", chars = "\u001b[27;6;9~" }, # sends <C-S-Tab>
   { key = "Slash", mods = "Control|Shift", chars = "\u001f" },
 
   { key = "A", mods = "Alt", chars = "\u001Ba" },
