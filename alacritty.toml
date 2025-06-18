@@ -40,7 +40,7 @@ y = 5
 
 [colors.primary]
 foreground = '#C5C9C5'
-background = '#111111'
+background = '#0D0C0C'
 # background = '#0D0C0C'
 
 [colors.normal]
