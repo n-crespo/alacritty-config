@@ -69,7 +69,7 @@ transparent_background_colors = false
 draw_bold_text_with_bright_colors = false
 
 [cursor]
-vi_mode_style = { shape = "Beam", blinking = "Never" }
+vi_mode_style = { shape = "Block", blinking = "Never" }
 # default = { text = "CellBackground", cursor = "CellForeground" }
 # (changes cursor color depeding on text color)
 
@@ -105,8 +105,7 @@ bindings = [
   { key = "T", mods = "Control|Shift", action = "CreateNewTab" },
   { key = "N", mods = "Control|Shift", action = "CreateNewTab" },
   { key = "M", mods = "Command|Shift", action = "ToggleFullscreen" },
-  { key = "M", mods = "Control|Shift", action = "ToggleFullscreen" },
-  # { key = "Space", mods = "Control|Shift", action = "CreateNewTab" },
+  { key = "M", mods = "Control", action = "ToggleViMode" },
 
   # { key = "H", mods = "Control|Shift", chars = "\u001B[27;6;72~" },
   # { key = "L", mods = "Control|Shift", chars = "\u001B[27;6;76~" },
