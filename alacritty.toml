@@ -16,35 +16,35 @@ opacity = 1
 decorations_theme_variant = "Dark"
 dynamic_padding = true
 padding.x = 0
-padding.y = 1
+padding.y = 0
 # title = "alacritty"
 resize_increments = true
 dynamic_title = true
+option_as_alt = "Both"
 
 [font]
 size = 14
-# normal = { family = "JetBrainsMono Nerd Font", style = "Light" }
-# bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
-# italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
-# bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
-normal = { family = "CaskaydiaCove Nerd Font", style = "SemiLight" }
-bold = { family = "CaskaydiaCove Nerd Font", style = "Bold" }
-italic = { family = "CaskaydiaCove Nerd Font", style = "Italic" }
-bold_italic = { family = "CaskaydiaCove Nerd Font", style = "Bold Italic" }
+normal = { family = "JetBrainsMono Nerd Font", style = "Light" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+# normal = { family = "CaskaydiaCove Nerd Font", style = "SemiLight" }
+# bold = { family = "CaskaydiaCove Nerd Font", style = "Bold" }
+# italic = { family = "CaskaydiaCove Nerd Font", style = "Italic" }
+# bold_italic = { family = "CaskaydiaCove Nerd Font", style = "Bold Italic" }
 
 [font.offset]
-y = 10
+y = 8
 
 [font.glyph_offset]
-y = 5
+y = 4
 
 [colors.primary]
 foreground = '#C5C9C5'
-background = '#0D0C0C'
-# background = '#0D0C0C'
+background = '#0D0D0D'
 
 [colors.normal]
-black = '#0D0C0C'
+black = '#0D0D0D'
 red = '#C4746E'
 green = '#8A9A7B'
 yellow = '#C8AE81'
