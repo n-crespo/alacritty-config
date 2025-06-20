@@ -69,7 +69,7 @@ transparent_background_colors = false
 draw_bold_text_with_bright_colors = false
 
 [cursor]
-vi_mode_style = { shape = "Block", blinking = "Never" }
+vi_mode_style = { shape = "Beam", blinking = "Never" }
 # default = { text = "CellBackground", cursor = "CellForeground" }
 # (changes cursor color depeding on text color)
 
@@ -88,11 +88,11 @@ bindings = [
   { key = "Backspace", mods = "Shift", chars = "\u001B[27;2;8~" },
 
   # ctrl BINDINGS
-  { key = "[", mods = "Control", chars = "\u001b[1;6;10~" },          # this sends <S-BS>, i use to unindent. doesn't break <ESC>
+  { key = "[", mods = "Control", chars = "\u001b[1;6;10~" },   # this sends <S-BS>, i use to unindent. doesn't break <ESC>
   { key = "I", mods = "Control", chars = "\u001B[105;5u" },
-  { key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" },        # sends <C-Tab>
+  { key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" }, # sends <C-Tab>
   { key = "Space", mods = "Control", chars = "\u0000" },
-  { key = "Slash", mods = "Control", chars = "\u001f" },
+  # { key = "Slash", mods = "Control", chars = "\u001f" },
   { key = "Return", mods = "Control", chars = "\u001B[13;5u" },
   { key = "Period", mods = "Control", chars = "\u001b[27;5;46~" },
   { key = "Backspace", mods = "Control", chars = "\u0017" },          # sends <C-w>
