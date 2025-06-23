@@ -74,7 +74,7 @@ vi_mode_style = { shape = "Block", blinking = "Never" }
 # (changes cursor color depeding on text color)
 
 [mouse]
-hide_when_typing = true
+hide_when_typing = false
 bindings = [{ mouse = "Right", action = "Paste" }]
 
 [keyboard]
