@@ -71,7 +71,7 @@ draw_bold_text_with_bright_colors = false
 [cursor]
 vi_mode_style = { shape = "Block", blinking = "Never" }
 # default = { text = "CellBackground", cursor = "CellForeground" }
-# (changes cursor color depeding on text color)
+# (changes cursor color depending on text color)
 
 [mouse]
 hide_when_typing = false
