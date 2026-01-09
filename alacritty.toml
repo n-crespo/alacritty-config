@@ -23,7 +23,7 @@ dynamic_title = true
 option_as_alt = "Both"
 
 [font]
-size = 14
+size = 11
 normal = { family = "JetBrainsMono Nerd Font", style = "Light" }
 bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
 italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
@@ -88,28 +88,17 @@ bindings = [
   { key = "Backspace", mods = "Shift", chars = "\u001B[27;2;8~" },
 
   # ctrl BINDINGS
-  { key = "[", mods = "Control", chars = "\u001b[1;6;10~" },   # this sends <S-BS>, i use to unindent. doesn't break <ESC>
-  { key = "I", mods = "Control", chars = "\u001B[105;5u" },
-  { key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" }, # sends <C-Tab>
-  { key = "Space", mods = "Control", chars = "\u0000" },
-  # { key = "Slash", mods = "Control", chars = "\u001f" },
-  { key = "Return", mods = "Control", chars = "\u001B[13;5u" },
-  { key = "Period", mods = "Control", chars = "\u001b[27;5;46~" },
-  { key = "Backspace", mods = "Control", chars = "\u0017" },          # sends <C-w>
-  { key = "Semicolon", mods = "Control", chars = "\u001b[27;5;59~" }, # This sends regular :, to go to vim cmdline
 
   # ACTIONS
-  { key = "L", mods = "Control|Shift", action = "SelectNextTab" },
+  # { key = "L", mods = "Control|Shift", action = "SelectNextTab" },
+  # { key = "H", mods = "Control|Shift", action = "SelectPreviousTab" },
+  # { key = "T", mods = "Control|Shift", action = "CreateNewTab" },
+  # { key = "N", mods = "Control|Shift", action = "CreateNewTab" },
   { key = "W", mods = "Control|Shift", action = "Quit" },
-  { key = "H", mods = "Control|Shift", action = "SelectPreviousTab" },
-  { key = "T", mods = "Control|Shift", action = "CreateNewTab" },
-  { key = "N", mods = "Control|Shift", action = "CreateNewTab" },
-  { key = "M", mods = "Command|Shift", action = "ToggleFullscreen" },
+  # { key = "M", mods = "Command|Shift", action = "ToggleFullscreen" },
   { key = "M", mods = "Control", action = "ToggleViMode" },
 
-  # { key = "H", mods = "Control|Shift", chars = "\u001B[27;6;72~" },
-  # { key = "L", mods = "Control|Shift", chars = "\u001B[27;6;76~" },
-  # { key = "T", mods = "Control|Shift", chars = "\u001B[27;6;20~" },
+  # ENABLING KEY COMBOS
   { key = "Q", mods = "Control|Alt", chars = "\u0011" },
   { key = "Q", mods = "Control|Shift", chars = "\u001B[27;6;17~" },
   { key = "J", mods = "Control|Shift", chars = "\u001B[27;6;74~" },
@@ -122,65 +111,26 @@ bindings = [
   { key = "?", mods = "Control|Shift", chars = "\u001B[27;6;47~" },
   { key = "V", mods = "Control|Shift", chars = "\u001B[86;6~" },
   { key = "C", mods = "Control|Shift", chars = "\u001B[27;6;67~" },
-  { key = "Tab", mods = "Control|Shift", chars = "\u001b[27;6;9~" }, # sends <C-S-Tab>
-  { key = "Slash", mods = "Control|Shift", chars = "\u001f" },
-
-  # not needed due to "option_as_alt = Both" setting
-  # { key = "A", mods = "Alt", chars = "\u001Ba" },
-  # { key = "B", mods = "Alt", chars = "\u001Bb" },
-  # { key = "C", mods = "Alt", chars = "\u001Bc" },
-  # { key = "D", mods = "Alt", chars = "\u001Bd" },
-  # { key = "E", mods = "Alt", chars = "\u001Be" },
-  # { key = "F", mods = "Alt", chars = "\u001Bf" },
-  # { key = "G", mods = "Alt", chars = "\u001Bg" },
-  # { key = "H", mods = "Alt", chars = "\u001Bh" },
-  # { key = "I", mods = "Alt", chars = "\u001Bi" },
-  # { key = "J", mods = "Alt", chars = "\u001Bj" },
-  # { key = "K", mods = "Alt", chars = "\u001Bk" },
-  # { key = "L", mods = "Alt", chars = "\u001Bl" },
-  # { key = "M", mods = "Alt", chars = "\u001Bm" },
-  # { key = "N", mods = "Alt", chars = "\u001Bn" },
-  # { key = "O", mods = "Alt", chars = "\u001Bo" },
-  # { key = "P", mods = "Alt", chars = "\u001Bp" },
-  # { key = "Q", mods = "Alt", chars = "\u001Bq" },
-  # { key = "R", mods = "Alt", chars = "\u001Br" },
-  # { key = "S", mods = "Alt", chars = "\u001Bs" },
-  # { key = "T", mods = "Alt", chars = "\u001Bt" },
-  # { key = "U", mods = "Alt", chars = "\u001Bu" },
-  # { key = "V", mods = "Alt", chars = "\u001Bv" },
-  # { key = "W", mods = "Alt", chars = "\u001Bw" },
-  # { key = "X", mods = "Alt", chars = "\u001Bx" },
-  # { key = "Y", mods = "Alt", chars = "\u001By" },
-  # { key = "Z", mods = "Alt", chars = "\u001Bz" },
-  # { key = "Period", mods = "Alt", chars = "\u001B." },
-  # { key = "Comma", mods = "Alt", chars = "\u001B," },
-  # { key = "Slash", mods = "Alt", chars = "\u001B/" },
-  # { key = "Semicolon", mods = "Alt", chars = "\u001B;" },
-  # # { key = "Backspace", mods = "Alt", chars = "\u001B\u007F" },
-  # { key = "\"", mods = "Alt", chars = "\u001B'" },
-  # { key = "{", mods = "Alt", chars = "\u001B[" },
-  # { key = "}", mods = "Alt", chars = "\u001B]" },
-  # { key = "\\", mods = "Alt", chars = "\u001B\\" },
-  # { key = "-", mods = "Alt", chars = "\u001B-" },
-  # { key = "=", mods = "Alt", chars = "\u001B=" },
-  # # { key = "Space", mods = "Alt", chars = "\u001B " },
-  # { key = "0", mods = "Alt", chars = "\u001B0" },
-  # { key = "1", mods = "Alt", chars = "\u001B1" },
-  # { key = "2", mods = "Alt", chars = "\u001B2" },
-  # { key = "3", mods = "Alt", chars = "\u001B3" },
-  # { key = "4", mods = "Alt", chars = "\u001B4" },
-  # { key = "5", mods = "Alt", chars = "\u001B5" },
-  # { key = "6", mods = "Alt", chars = "\u001B6" },
-  # { key = "7", mods = "Alt", chars = "\u001B7" },
-  # { key = "8", mods = "Alt", chars = "\u001B8" },
-  # { key = "9", mods = "Alt", chars = "\u001B9" },
+  { key = "Tab", mods = "Control|Shift", chars = "\u001b[27;6;9~" },  # sends <C-S-Tab>
+  { key = "Slash", mods = "Control", chars = "\u001f" },
+  { key = "H", mods = "Control", chars = "\u001B[104;5u" },
+  { key = "Space", mods = "Control", chars = "\u001B[32;5u" },
+  { key = "[", mods = "Control", chars = "\u001b[1;6;10~" },          # this sends <S-BS>, i use to unindent. doesn't break <ESC>
+  { key = "I", mods = "Control", chars = "\u001B[105;5u" },
+  { key = "Tab", mods = "Control", chars = "\u001b[27;5;9~" },        # sends <C-Tab>
+  { key = "Return", mods = "Control", chars = "\u001B[13;5u" },
+  { key = "Period", mods = "Control", chars = "\u001b[27;5;46~" },
+  { key = "Backspace", mods = "Control", chars = "\u0017" },          # sends <C-w>
+  { key = "Semicolon", mods = "Control", chars = "\u001b[27;5;59~" }, # This sends regular :, to go to vim cmdline
+  # { key = "H", mods = "Control|Shift", chars = "\u001B[27;6;72~" },
+  # { key = "L", mods = "Control|Shift", chars = "\u001B[27;6;76~" },
+  # { key = "T", mods = "Control|Shift", chars = "\u001B[27;6;20~" },
 
 
-  # { key = "Comma", mods = "Control", command = { program = "/Users/ncrespo1/Desktop/Applications/Alacritty.app/Contents/MacOS/alacritty", args = [
-  #   "--command",
-  #   "btop",
-  # ] } },
-  # { key = ";", mods = "Control", chars = "\u001F" }, # this sends <C-_>
+  { key = "Comma", mods = "Control", command = { program = "alacritty", args = [
+    "--command",
+    "nvim ~/AppData/Roaming/alacritty/alacritty.toml",
+  ] } },
 ]
 
 # https://en.wikipedia.org/wiki/List_of_Unicode_characters
