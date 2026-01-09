@@ -29,12 +29,12 @@ lines = 1
 
 # HACK: set initial window positions off the screen to avoid white flash
 [window.position]
-x = 0
-y = 0
+x = 2000
+y = 2000
 
 [font]
 size = 11
-normal = { family = "JetBrainsMono Nerd Font", style = "Light" }
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
 bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
 italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
 bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
@@ -81,6 +81,11 @@ cursor = { text = "CellBackground", cursor = "#ffffff" }
 transparent_background_colors = false
 draw_bold_text_with_bright_colors = false
 vi_mode_cursor.cursor = "#0539A3"
+selection = { text = "CellForeground", background = "#2E2E2E" }
+footer_bar.background = "#0f0f0f"
+footer_bar.foreground = "#ffffff"
+line_indicator.background = "#0f0f0f"
+line_indicator.foreground = "#ffffff"
 
 [cursor]
 vi_mode_style = { shape = "Block", blinking = "Never" }
