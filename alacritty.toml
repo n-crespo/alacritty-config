@@ -14,13 +14,23 @@ TERM = "alacritty" # needed for undercurl
 decorations = "full"
 opacity = 1
 decorations_theme_variant = "Dark"
+startup_mode = "Windowed"
 dynamic_padding = true
 padding.x = 0
 padding.y = 0
-# title = "alacritty"
+title = "alacritty"
 resize_increments = true
 dynamic_title = true
 option_as_alt = "Both"
+
+[window.dimensions]
+columns = 1
+lines = 1
+
+# HACK: set initial window positions off the screen to avoid white flash
+[window.position]
+x = 0
+y = 0
 
 [font]
 size = 11
@@ -28,45 +38,49 @@ normal = { family = "JetBrainsMono Nerd Font", style = "Light" }
 bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
 italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
 bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+builtin_box_drawing = true
 # normal = { family = "CaskaydiaCove Nerd Font", style = "SemiLight" }
 # bold = { family = "CaskaydiaCove Nerd Font", style = "Bold" }
 # italic = { family = "CaskaydiaCove Nerd Font", style = "Italic" }
 # bold_italic = { family = "CaskaydiaCove Nerd Font", style = "Bold Italic" }
 
 [font.offset]
+x = -1
 y = 6
 
 [font.glyph_offset]
-y = 3
+y = 0
+x = 0
 
 [colors.primary]
-foreground = '#C5C9C5'
-background = '#0D0D0D'
+foreground = '#C9C9C9'
+background = '#0F0F0F'
 
 [colors.normal]
-black = '#0D0D0D'
-red = '#C4746E'
+black = '#1D1D1D'
+blue = '#88A3BC'
+cyan = '#8992A7'
 green = '#8A9A7B'
-yellow = '#C8AE81'
-blue = '#8BA4B0'
 magenta = '#A292A3'
-cyan = '#95AEAC'
-white = '#C5C9C5'
+red = '#C4746E'
+white = '#C9C9C9'
+yellow = '#C8AE81'
 
 [colors.bright]
-black = '#393836'
-red = '#E46876'
-green = '#87A987'
-yellow = '#DCA561'
-blue = '#7FB4CA'
-magenta = '#938AA9'
-cyan = '#7AA89F'
+black = '#898989'
+blue = '#2D4F67'
+cyan = '#949FB5'
+green = '#98BB6C'
+magenta = "#5f5f87"
+red = '#C34043'
+yellow = '#FF9E3B'
 white = '#FFFFFF'
 
 [colors]
-cursor = { text = "CellBackground", cursor = "#C5C9C9" }
+cursor = { text = "CellBackground", cursor = "#ffffff" }
 transparent_background_colors = false
 draw_bold_text_with_bright_colors = false
+vi_mode_cursor.cursor = "#0539A3"
 
 [cursor]
 vi_mode_style = { shape = "Block", blinking = "Never" }
